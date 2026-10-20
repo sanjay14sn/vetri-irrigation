@@ -129,16 +129,16 @@ function Home() {
           <div className="relative aspect-video overflow-hidden rounded-xl bg-muted shadow-[var(--shadow-soft)]">
             {isVideoPlaying ? (
               <iframe
-                src="https://www.youtube-nocookie.com/embed/VklikpSx_V0?autoplay=1&rel=0"
+                src="https://www.youtube-nocookie.com/embed/qRek-avqweI?autoplay=1&rel=0"
                 title="Vetri Irrigation project video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
-                className="absolute inset-0 h-full w-full"
+                className="absolute inset-0 h-full w-full border-0"
               />
             ) : (
               <>
                 <img
-                  src={videoThumbnail.url}
+                  src="https://img.youtube.com/vi/qRek-avqweI/hqdefault.jpg"
                   alt="Vetri Irrigation project video thumbnail"
                   width={480}
                   height={360}
@@ -180,6 +180,61 @@ function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Leading Brand Partners Showcase (4-Grid) */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+              Trusted Materials
+            </p>
+            <h2 className="mt-1 text-3xl font-bold tracking-tight">Leading Brand Partners</h2>
+            <p className="mt-2 text-muted-foreground">
+              We work with top irrigation, pump, valve and piping manufacturers.
+            </p>
+          </div>
+          <Link
+            to="/brands"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+          >
+            View all 20 brands <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {[
+            { name: "Rain Bird", logo: "https://www.shiva-kaveri.com/image/logo/rain-bird.jpg", url: "https://www.rainbird.com/professionals" },
+            { name: "Aqva Star", logo: "https://www.shiva-kaveri.com/image/logo/aqva-star.jpg", url: "https://aqvastar.in/products/" },
+            { name: "Armas", logo: "https://www.shiva-kaveri.com/image/logo/armas.jpg", url: "https://www.armas.com.tr/en-US/Dynamic/Page/About-Us" },
+            { name: "Kasco", logo: "https://www.shiva-kaveri.com/image/logo/kasco.jpg", url: "https://kascomarine.com/" },
+            { name: "Xeritech", logo: "https://www.shiva-kaveri.com/image/logo/xeritech.jpg", url: "https://www.shiva-kaveri.com/our-brands-and-partners.php#" },
+            { name: "Supreme", logo: "https://www.shiva-kaveri.com/image/logo/supreme.jpg", url: "https://www.supreme.co.in/" },
+            { name: "Wilo", logo: "https://www.shiva-kaveri.com/image/logo/wilo.jpg", url: "https://wilo.com/in/en/" },
+            { name: "Italfog", logo: "https://www.shiva-kaveri.com/image/logo/italfog.jpg", url: "https://italfog.com/" },
+          ].map((brand) => (
+            <a
+              key={brand.name}
+              href={brand.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Visit official ${brand.name} website`}
+              className="group flex flex-col items-center justify-center rounded-xl border border-border/80 bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+            >
+              <div className="flex h-16 w-full items-center justify-center rounded-lg bg-white p-2">
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  loading="lazy"
+                  className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <span className="mt-2 text-xs font-semibold text-foreground/90 group-hover:text-primary transition-colors">
+                {brand.name}
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, Phone, MapPin, Mail } from "lucide-react";
-import logo from "@/assets/vetri-logo.jpg.asset.json";
+import logo from "@/assets/vetri-logo.png";
 
 export const NAV = [
   { to: "/", label: "Home" },
@@ -43,19 +43,19 @@ export function SiteHeader() {
       </div>
 
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3 group">
           <img
-            src={logo.url}
+            src={logo}
             alt="Vetri Irrigation logo"
-            width={56}
-            height={56}
-            className="h-12 w-12 rounded-md object-cover"
+            width={64}
+            height={64}
+            className="h-12 w-12 rounded-lg object-contain bg-white p-0.5 border border-border/50 shadow-xs transition-transform group-hover:scale-105"
           />
           <span className="leading-tight">
             <span className="block text-lg font-bold tracking-tight text-primary">
               Vetri Irrigation
             </span>
-            <span className="block text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+            <span className="block text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               Watering · Growing · Prospering
             </span>
           </span>
@@ -109,14 +109,19 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src={logo.url}
-              alt="Vetri Irrigation"
+              src={logo}
+              alt="Vetri Irrigation logo"
               width={48}
               height={48}
               loading="lazy"
-              className="h-11 w-11 rounded-md object-cover"
+              className="h-11 w-11 rounded-lg object-contain bg-white p-0.5 border border-border/50"
             />
-            <span className="text-base font-bold text-primary">Vetri Irrigation</span>
+            <span className="leading-tight">
+              <span className="block text-base font-bold text-primary">Vetri Irrigation</span>
+              <span className="block text-[9px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                Watering · Growing · Prospering
+              </span>
+            </span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
             Landscape irrigation, fountains, swimming pools and sports turf systems designed,
