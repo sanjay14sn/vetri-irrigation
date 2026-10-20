@@ -52,9 +52,9 @@ function Profile() {
             </p>
             <p>
               Our work spans farm drip and sprinkler systems, garden and landscape irrigation,
-              decorative and musical fountains, swimming pool plumbing and filtration, and
-              automatic irrigation for cricket and football grounds. We also handle industrial
-              greenbelt watering and factory water distribution lines.
+              decorative and musical fountains, swimming pool plumbing and filtration, and automatic
+              irrigation for cricket and football grounds. We also handle industrial greenbelt
+              watering and factory water distribution lines.
             </p>
             <p>
               Every project is backed by service support: spares, seasonal servicing, controller

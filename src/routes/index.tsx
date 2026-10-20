@@ -39,12 +39,36 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: Sprout, title: "Landscape Irrigation", text: "Pop-up sprinkler and drip systems for lawns, gardens and green walls." },
-  { icon: Waves, title: "Fountains", text: "Musical, dancing and architectural fountains with lighting and controls." },
-  { icon: Droplets, title: "Swimming Pools", text: "Pool construction, filtration, plumbing and maintenance packages." },
-  { icon: Trophy, title: "Sports Grounds", text: "Cricket and football ground irrigation with automatic pop-up systems." },
-  { icon: Factory, title: "Industrial Projects", text: "Factory greenbelt, dust suppression and water distribution networks." },
-  { icon: Wrench, title: "Service & AMC", text: "Annual maintenance, spares, retrofits and system health check-ups." },
+  {
+    icon: Sprout,
+    title: "Landscape Irrigation",
+    text: "Pop-up sprinkler and drip systems for lawns, gardens and green walls.",
+  },
+  {
+    icon: Waves,
+    title: "Fountains",
+    text: "Musical, dancing and architectural fountains with lighting and controls.",
+  },
+  {
+    icon: Droplets,
+    title: "Swimming Pools",
+    text: "Pool construction, filtration, plumbing and maintenance packages.",
+  },
+  {
+    icon: Trophy,
+    title: "Sports Grounds",
+    text: "Cricket and football ground irrigation with automatic pop-up systems.",
+  },
+  {
+    icon: Factory,
+    title: "Industrial Projects",
+    text: "Factory greenbelt, dust suppression and water distribution networks.",
+  },
+  {
+    icon: Wrench,
+    title: "Service & AMC",
+    text: "Annual maintenance, spares, retrofits and system health check-ups.",
+  },
 ];
 
 function Home() {
@@ -165,7 +189,9 @@ function Home() {
       <section className="bg-secondary/50 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="text-3xl font-bold tracking-tight">What we do</h2>
-          <p className="mt-2 text-muted-foreground">Six core areas of work, one accountable team.</p>
+          <p className="mt-2 text-muted-foreground">
+            Six core areas of work, one accountable team.
+          </p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <div
@@ -205,14 +231,46 @@ function Home() {
 
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {[
-            { name: "Rain Bird", logo: "https://www.shiva-kaveri.com/image/logo/rain-bird.jpg", url: "https://www.rainbird.com/professionals" },
-            { name: "Aqva Star", logo: "https://www.shiva-kaveri.com/image/logo/aqva-star.jpg", url: "https://aqvastar.in/products/" },
-            { name: "Armas", logo: "https://www.shiva-kaveri.com/image/logo/armas.jpg", url: "https://www.armas.com.tr/en-US/Dynamic/Page/About-Us" },
-            { name: "Kasco", logo: "https://www.shiva-kaveri.com/image/logo/kasco.jpg", url: "https://kascomarine.com/" },
-            { name: "Xeritech", logo: "https://www.shiva-kaveri.com/image/logo/xeritech.jpg", url: "https://www.shiva-kaveri.com/our-brands-and-partners.php#" },
-            { name: "Supreme", logo: "https://www.shiva-kaveri.com/image/logo/supreme.jpg", url: "https://www.supreme.co.in/" },
-            { name: "Wilo", logo: "https://www.shiva-kaveri.com/image/logo/wilo.jpg", url: "https://wilo.com/in/en/" },
-            { name: "Italfog", logo: "https://www.shiva-kaveri.com/image/logo/italfog.jpg", url: "https://italfog.com/" },
+            {
+              name: "Rain Bird",
+              logo: "https://www.shiva-kaveri.com/image/logo/rain-bird.jpg",
+              url: "https://www.rainbird.com/professionals",
+            },
+            {
+              name: "Aqva Star",
+              logo: "https://www.shiva-kaveri.com/image/logo/aqva-star.jpg",
+              url: "https://aqvastar.in/products/",
+            },
+            {
+              name: "Armas",
+              logo: "https://www.shiva-kaveri.com/image/logo/armas.jpg",
+              url: "https://www.armas.com.tr/en-US/Dynamic/Page/About-Us",
+            },
+            {
+              name: "Kasco",
+              logo: "https://www.shiva-kaveri.com/image/logo/kasco.jpg",
+              url: "https://kascomarine.com/",
+            },
+            {
+              name: "Xeritech",
+              logo: "https://www.shiva-kaveri.com/image/logo/xeritech.jpg",
+              url: "https://www.shiva-kaveri.com/our-brands-and-partners.php#",
+            },
+            {
+              name: "Supreme",
+              logo: "https://www.shiva-kaveri.com/image/logo/supreme.jpg",
+              url: "https://www.supreme.co.in/",
+            },
+            {
+              name: "Wilo",
+              logo: "https://www.shiva-kaveri.com/image/logo/wilo.jpg",
+              url: "https://wilo.com/in/en/",
+            },
+            {
+              name: "Italfog",
+              logo: "https://www.shiva-kaveri.com/image/logo/italfog.jpg",
+              url: "https://italfog.com/",
+            },
           ].map((brand) => (
             <a
               key={brand.name}
@@ -255,7 +313,10 @@ function Home() {
                 Cricket and football grounds with automatic pop-up sprinklers, zoning and
                 controller-based scheduling for even turf coverage.
               </p>
-              <Link to="/projects" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              <Link
+                to="/projects"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              >
                 View projects <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -275,7 +336,10 @@ function Home() {
                 Drip lines, sprinklers, valves, filters, fittings, pumps and controllers — available
                 for projects and over the counter.
               </p>
-              <Link to="/products" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+              <Link
+                to="/products"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              >
                 Browse products <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

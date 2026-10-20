@@ -25,12 +25,30 @@ export const Route = createFileRoute("/projects")({
 });
 
 const sectors = [
-  { title: "Houses & villas", text: "Garden pop-up sprinkler lines, drip beds and terrace garden watering." },
-  { title: "Resorts & guest houses", text: "Landscape design, lawn irrigation, fountains and pool plumbing." },
-  { title: "Farm houses", text: "Drip and sprinkler layouts, filtration, pump sizing and automation." },
-  { title: "Golf courses", text: "Zone-wise turf irrigation with controllers and high-throw sprinklers." },
-  { title: "Industrial factories", text: "Greenbelt watering, dust suppression and distribution networks." },
-  { title: "Cricket & football grounds", text: "Automatic pop-up systems for uniform outfield coverage." },
+  {
+    title: "Houses & villas",
+    text: "Garden pop-up sprinkler lines, drip beds and terrace garden watering.",
+  },
+  {
+    title: "Resorts & guest houses",
+    text: "Landscape design, lawn irrigation, fountains and pool plumbing.",
+  },
+  {
+    title: "Farm houses",
+    text: "Drip and sprinkler layouts, filtration, pump sizing and automation.",
+  },
+  {
+    title: "Golf courses",
+    text: "Zone-wise turf irrigation with controllers and high-throw sprinklers.",
+  },
+  {
+    title: "Industrial factories",
+    text: "Greenbelt watering, dust suppression and distribution networks.",
+  },
+  {
+    title: "Cricket & football grounds",
+    text: "Automatic pop-up systems for uniform outfield coverage.",
+  },
 ];
 
 const work = [
@@ -69,7 +87,10 @@ function Projects() {
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="grid gap-6 lg:grid-cols-3">
           {work.map((w) => (
-            <article key={w.title} className="overflow-hidden rounded-xl border border-border bg-card">
+            <article
+              key={w.title}
+              className="overflow-hidden rounded-xl border border-border bg-card"
+            >
               <img
                 src={w.img}
                 alt={w.alt}

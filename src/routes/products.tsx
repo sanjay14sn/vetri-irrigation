@@ -32,7 +32,12 @@ const catalogue = [
   },
   {
     title: "Pipes & fittings",
-    items: ["HDPE / PVC pipes", "Compression fittings", "Solvent-weld fittings", "Flanges & adaptors"],
+    items: [
+      "HDPE / PVC pipes",
+      "Compression fittings",
+      "Solvent-weld fittings",
+      "Flanges & adaptors",
+    ],
   },
   {
     title: "Valves & filters",
@@ -44,7 +49,12 @@ const catalogue = [
   },
   {
     title: "Automation",
-    items: ["Irrigation controllers", "Rain sensors", "Moisture sensors", "Fountain control panels"],
+    items: [
+      "Irrigation controllers",
+      "Rain sensors",
+      "Moisture sensors",
+      "Fountain control panels",
+    ],
   },
   {
     title: "Fountain equipment",

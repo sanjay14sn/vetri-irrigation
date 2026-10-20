@@ -14,7 +14,8 @@ export const Route = createFileRoute("/customer-services")({
       { property: "og:title", content: "Customer Services — Vetri Irrigation" },
       {
         property: "og:description",
-        content: "Survey, installation, AMC, spares and breakdown support for your irrigation system.",
+        content:
+          "Survey, installation, AMC, spares and breakdown support for your irrigation system.",
       },
     ],
   }),
@@ -22,12 +23,36 @@ export const Route = createFileRoute("/customer-services")({
 });
 
 const services = [
-  { icon: ClipboardList, title: "Free site survey", text: "We visit your site, check the water source and prepare a layout with an estimate." },
-  { icon: Wrench, title: "Installation & commissioning", text: "Trained crews install, pressure test and hand over the system with a demo." },
-  { icon: ShieldCheck, title: "Annual maintenance", text: "Scheduled servicing, nozzle cleaning, filter flushing and controller checks." },
-  { icon: Headset, title: "Spares & replacements", text: "Genuine sprinklers, drippers, valves, filters and controller parts in stock." },
-  { icon: Clock, title: "Breakdown support", text: "Call us for leaks, low pressure, blockages or automation faults." },
-  { icon: PhoneCall, title: "Guidance on WhatsApp", text: "Send photos of the issue and get quick advice from our service team." },
+  {
+    icon: ClipboardList,
+    title: "Free site survey",
+    text: "We visit your site, check the water source and prepare a layout with an estimate.",
+  },
+  {
+    icon: Wrench,
+    title: "Installation & commissioning",
+    text: "Trained crews install, pressure test and hand over the system with a demo.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Annual maintenance",
+    text: "Scheduled servicing, nozzle cleaning, filter flushing and controller checks.",
+  },
+  {
+    icon: Headset,
+    title: "Spares & replacements",
+    text: "Genuine sprinklers, drippers, valves, filters and controller parts in stock.",
+  },
+  {
+    icon: Clock,
+    title: "Breakdown support",
+    text: "Call us for leaks, low pressure, blockages or automation faults.",
+  },
+  {
+    icon: PhoneCall,
+    title: "Guidance on WhatsApp",
+    text: "Send photos of the issue and get quick advice from our service team.",
+  },
 ];
 
 const faqs = [

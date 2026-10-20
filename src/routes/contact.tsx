@@ -16,7 +16,8 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Vetri Irrigation" },
       {
         property: "og:description",
-        content: "Call, visit or send an enquiry for irrigation, landscape, fountain and pool work.",
+        content:
+          "Call, visit or send an enquiry for irrigation, landscape, fountain and pool work.",
       },
     ],
   }),

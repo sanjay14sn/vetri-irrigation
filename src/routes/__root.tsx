@@ -89,7 +89,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Vetri Irrigation" },
       {
         property: "og:description",
-        content: "Watering · Growing · Prospering — irrigation and landscape solutions since day one.",
+        content:
+          "Watering · Growing · Prospering — irrigation and landscape solutions since day one.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -143,7 +143,9 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">Reach us</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
+            Reach us
+          </h3>
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
             <li className="flex gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -190,7 +192,9 @@ export function PageHero({
     <section className="border-b border-border bg-primary/5">
       <div className="mx-auto max-w-6xl px-4 py-14">
         {eyebrow && (
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">{eyebrow}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+            {eyebrow}
+          </p>
         )}
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
           {title}
